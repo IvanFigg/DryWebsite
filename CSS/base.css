@@ -15,7 +15,8 @@ nav {
 
 body {
   margin: 0;
-  font-family: 1rem;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   color: var(--color-text);
@@ -57,4 +58,41 @@ button {
 
 .container {
   max-width: 1140px;
+}
+
+.ul-defaults-none {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.btn {
+  font-weight: 700;
+  min-width: 175px;
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  letter-spacing: 1.63px;
+  height: 65px;
+  transition: 0.4s;
+  padding-left: 30px;
+  padding-right: 30px;
+  box-shadow: 0 32px 54px rgba(3, 3, 3, 0.12);
+}
+.btn:not(:disabled).btn:not(.disabled),
+button:not(:disabled):not(.disabled) {
+  cursor: pointer;
+}
+
+.btn-primary,
+.btn-primary a {
+  columns: #fff;
+  background-color: #495fef;
+  border-color: #495fef;
+}
+
+.round-pill {
+  border-radius: 50rem;
 }
